@@ -4,6 +4,8 @@ import User from './../app/controllers/UserController'
 
 const routes = Router()
 
-routes.get( '/', User.index )
+routes.get( '/users', User.index )
+
+routes.post( '/users', User.create )
 
 export default routes
